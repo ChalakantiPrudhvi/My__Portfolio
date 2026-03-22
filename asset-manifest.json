@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/My__Portfolio/static/css/main.f0edecdc.css",
+    "main.js": "/My__Portfolio/static/js/main.1d851223.js",
+    "static/js/453.51248253.chunk.js": "/My__Portfolio/static/js/453.51248253.chunk.js",
+    "static/media/tcs.pdf": "/My__Portfolio/static/media/tcs.d235cf44a73725743e40.pdf",
+    "static/media/image2.jpg": "/My__Portfolio/static/media/image2.b5bd97b7b5694876abdb.jpg",
+    "static/media/java.pdf": "/My__Portfolio/static/media/java.9fc6731dde68f055b024.pdf",
+    "static/media/prajwal.pdf": "/My__Portfolio/static/media/prajwal.14acd5df57ceb49cd10a.pdf",
+    "static/media/Prudhvi'sResume.pdf": "/My__Portfolio/static/media/Prudhvi'sResume.b252799047db62d2c3ca.pdf",
+    "static/media/prajwal.jpg": "/My__Portfolio/static/media/prajwal.be1d9c8229c1d7f88175.jpg",
+    "static/media/java.jpg": "/My__Portfolio/static/media/java.525ded9575b9c5634b80.jpg",
+    "static/media/tcs.jpg": "/My__Portfolio/static/media/tcs.3942ce3f17547af6f682.jpg",
+    "static/media/caluc.jpg": "/My__Portfolio/static/media/caluc.39eb7b22e5f5c9b61688.jpg",
+    "static/media/flipkart.jpg": "/My__Portfolio/static/media/flipkart.dae9213ac6bbd9abb57a.jpg",
+    "index.html": "/My__Portfolio/index.html",
+    "main.f0edecdc.css.map": "/My__Portfolio/static/css/main.f0edecdc.css.map",
+    "main.1d851223.js.map": "/My__Portfolio/static/js/main.1d851223.js.map",
+    "453.51248253.chunk.js.map": "/My__Portfolio/static/js/453.51248253.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0edecdc.css",
+    "static/js/main.1d851223.js"
+  ]
+}
