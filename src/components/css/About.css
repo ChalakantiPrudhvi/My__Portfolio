@@ -3,7 +3,7 @@
   padding: 60px 20px;
   background: linear-gradient(135deg, #020617, #020b1f, #03122e);
   color: #e2e8f0;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* Container */
