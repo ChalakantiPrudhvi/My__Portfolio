@@ -12,14 +12,23 @@ const App = () => {
   return (
     <Router>
       <Navbar />
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/certifications" element={<Certifications />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-      </Routes>
+      </Routes> */}
+      <Routes>
+  <Route index element={<Home />} />   {/* ✅ ADD THIS */}
+  <Route path="/" element={<Home />} />
+  <Route path="/projects" element={<Projects />} />
+  <Route path="/skills" element={<Skills />} />
+  <Route path="/certifications" element={<Certifications />} />
+  <Route path="/about" element={<About />} />
+  <Route path="/contact" element={<Contact />} />
+</Routes>
     </Router>
   );
 };
