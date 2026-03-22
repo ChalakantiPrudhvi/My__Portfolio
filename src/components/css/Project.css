@@ -1,0 +1,195 @@
+/* Container */
+.project-container{
+    margin: 0;
+    padding: 40px 20px;
+    color: grey;
+    background: radial-gradient(circle at 30% 30%, #0a0f1f, #000);
+}
+
+/* Title */
+.title{
+    text-align: center;
+    margin: 20px;
+    font-weight: 700;
+    color: #1862d9;
+    font-size: 1.8rem;
+}
+
+/* PROJECT LIST */
+.projects{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+/* PROJECT ROW */
+.project-row{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(59,130,246,0.2);
+    box-shadow: 0 0 10px #3b82f699;
+    transition: 0.3s;
+    animation: flow 1s ease;
+}
+
+.project-row:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 20px #3b82f6aa;
+}
+
+/* IMAGE */
+.project-left img{
+    width: 100%;
+    max-width: 300px; /* responsive */
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    background: white;
+    padding: 10px;
+}
+
+/* CONTENT */
+.project-right{
+    flex: 1;
+    min-width: 250px;
+}
+
+.project-right h3{
+    color: #3b82f6;
+    margin-bottom: 10px;
+}
+
+/* DESCRIPTION */
+.desc{
+    color: #cbd5f5;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    max-width: 600px;
+}
+
+/* SKILLS */
+.lang{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+.lang span{
+    border: 1px solid #3b82f6;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+/* BUTTONS */
+.btn{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.code-btn{
+    border: 1px solid #3b82f6;
+    background: transparent;
+    color: #3b82f6;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.code-btn:hover{
+    background: #3b82f6;
+    color: white;
+}
+
+.live-btn{
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.live-btn:hover{
+    background: #2563eb;
+}
+
+/* Animation */
+@keyframes flow {
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ======================= */
+/* 📱 MOBILE */
+/* ======================= */
+@media (max-width: 768px){
+    .project-row{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .project-left img{
+        max-width: 90%;
+    }
+
+    .project-right{
+        min-width: 100%;
+    }
+
+    .desc{
+        max-width: 100%;
+        font-size: 13px;
+    }
+
+    .btn{
+        justify-content: center;
+    }
+
+    .title{
+        font-size: 1.5rem;
+    }
+}
+
+/* ======================= */
+/* 📲 TABLET */
+/* ======================= */
+@media (max-width: 1024px){
+    .project-row{
+        gap: 25px;
+    }
+
+    .project-left img{
+        max-width: 250px;
+    }
+
+    .title{
+        font-size: 1.6rem;
+    }
+}
+
+/* ======================= */
+/* 💻 LARGE SCREENS */
+/* ======================= */
+@media (min-width: 1200px){
+    .project-row{
+        max-width: 1100px;
+    }
+}

@@ -1,0 +1,157 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container */
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: center;       /* center vertically */
+  flex-direction: column;
+  background: radial-gradient(circle at 30% 30%, #101b3f, #040404);
+  color: #fff;
+}
+
+/* Profile Section (CENTERED WITHOUT CHANGING LAYOUT) */
+.profile-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  width: 100%;
+
+  gap: 60px;
+  margin: 0 auto;        /* ✅ centers the whole block */
+  padding-left: 0;       /* ✅ removes unwanted left gap */
+}
+
+/* Image */
+.profile-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #3b82f6;
+  box-shadow: 0 0 25px #3b82f699;
+  transition: 0.4s ease;
+  animation: img 2s;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes img {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Text */
+.profile-div {
+  width: 700px;
+  flex: 2;
+}
+
+/* Heading */
+.profile-div h1 {
+  font-size: 30px;
+  margin-top: 20px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid transparent;
+  width: 15ch;
+  animation: typing 3s steps(40, end) forwards;
+}
+
+/* Typing Animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.highlight {
+  color: #3b82f6;
+}
+
+/* Socials */
+.socials {
+  display: flex;
+  gap: 40px;
+  margin: 20px;
+  padding-bottom: 50px;
+}
+
+.socials a {
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.socials a:hover {
+  transform: rotate(15deg) scale(1.2);
+}
+
+/* ======================= */
+/* 📱 MOBILE */
+/* ======================= */
+@media (max-width: 768px) {
+  .profile-section {
+    flex-direction: column; /* stack only on mobile */
+    gap: 20px;
+    text-align: center;
+  }
+
+  .profile-div {
+    width: 100%;
+  }
+
+  .profile-img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .profile-div h1 {
+    font-size: 22px;
+    white-space: normal; /* prevent overflow */
+    width: 100%;
+    animation: none;
+  }
+
+  .socials {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+/* ======================= */
+/* 📲 TABLET */
+/* ======================= */
+@media (max-width: 1024px) {
+  .profile-section {
+    gap: 30px;
+  }
+
+  .profile-img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .profile-div h1 {
+    font-size: 26px;
+  }
+}

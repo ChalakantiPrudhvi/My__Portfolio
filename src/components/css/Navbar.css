@@ -1,0 +1,125 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: #0d0d0d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo + Name (NO GAP FIXED HERE) */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* small controlled gap */
+}
+
+/* Logo */
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #3b82f6;
+  border-radius: 50%;
+  border: 2px solid gold;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Name */
+.name h5 {
+  color: grey;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.2;
+}
+.name h5 span {
+  color: gold;
+}
+.name h6 {
+  color: grey;
+  font-size: 0.8rem;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: #e5e5e5;
+  text-decoration: none;
+  font-size: 0.95rem;
+  position: relative;
+}
+
+/* Hover effect */
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #3b82f6;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background: white;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: #0f0f0f;
+    display: none;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .name {
+    display: none; /* optional for clean mobile */
+  }
+}

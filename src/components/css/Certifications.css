@@ -1,0 +1,158 @@
+/* ===== Certifications Section ===== */
+.certification-section {
+  padding: 60px 20px;
+  background: radial-gradient(circle at 30% 30%, #0a0f1f, #000);
+  color: #cbd5f5;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.certification-title {
+  font-size: 36px;
+  color: #3b82f6;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* ===== Container ===== */
+.certification-container {
+  display: flex;
+  /* height: 100vh; */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; /* reduced for better fit */
+}
+
+/* ===== Card ===== */
+.cert-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 12px;
+
+  width: 100%;
+  max-width: 380px; /* responsive instead of fixed */
+
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cert-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #3b82f6aa;
+}
+
+/* ===== Thumbnail ===== */
+.cert-thumbnail {
+  position: relative;
+  width: 100%;
+  height: 220px; /* fixed for consistency */
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cert-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.cert-thumbnail:hover img {
+  transform: scale(1.05);
+  opacity: 0.7;
+}
+
+/* ===== View Button ===== */
+.view-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #3b82f6;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.cert-thumbnail:hover .view-button {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* ===== Details ===== */
+.cert-details {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.cert-details h3 {
+  font-size: 18px;
+  color: #3b82f6;
+  margin-bottom: 5px;
+}
+
+.cert-details p {
+  font-size: 14px;
+  margin: 3px 0;
+  color: #cbd5f5;
+}
+
+/* ======================= */
+/* 📱 MOBILE */
+/* ======================= */
+@media (max-width: 768px) {
+  .certification-title {
+    font-size: 26px;
+  }
+
+  .cert-card {
+    max-width: 90%;
+  }
+
+  .cert-thumbnail {
+    height: 180px;
+  }
+}
+
+/* ======================= */
+/* 📲 TABLET */
+/* ======================= */
+@media (max-width: 1024px) {
+  .certification-container {
+    gap: 30px;
+  }
+
+  .cert-card {
+    max-width: 320px;
+  }
+
+  .cert-thumbnail {
+    height: 200px;
+  }
+
+  .certification-title {
+    font-size: 30px;
+  }
+}
+
+/* ======================= */
+/* 💻 LARGE SCREENS */
+/* ======================= */
+@media (min-width: 1200px) {
+  .certification-container {
+    gap: 50px;
+  }
+
+  .cert-card {
+    max-width: 400px;
+  }
+}
